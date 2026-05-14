@@ -1,0 +1,460 @@
+/* ===================================
+   PG BOYS - Modern Professional Design
+   White + Purple/Blue Theme
+   =================================== */
+
+/* Container */
+.pgb-container {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f8faff 0%, #f0f4ff 100%);
+    padding: 100px 24px 60px;
+}
+
+/* Header */
+.pgb-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pgb-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.pgb-title-icon {
+    font-size: 2rem;
+}
+
+.pgb-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Filters Section */
+.pgb-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto 24px;
+    padding: 20px 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.08);
+}
+
+.pgb-search-wrap {
+    flex: 1;
+    min-width: 280px;
+    position: relative;
+}
+
+.pgb-search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #94a3b8;
+}
+
+.pgb-search-input {
+    width: 100%;
+    height: 52px;
+    padding: 0 16px 0 48px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #334155;
+    transition: all 0.25s ease;
+    background: #f8fafc;
+}
+
+.pgb-search-input:focus {
+    outline: none;
+    border-color: #6366f1;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.pgb-search-input::placeholder {
+    color: #94a3b8;
+}
+
+.pgb-filter-group {
+    display: flex;
+    gap: 12px;
+}
+
+.pgb-select {
+    height: 52px;
+    padding: 0 40px 0 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+    background: #f8fafc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2394a3b8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E") no-repeat right 12px center;
+    background-size: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    appearance: none;
+}
+
+.pgb-select:focus {
+    outline: none;
+    border-color: #6366f1;
+    background-color: #fff;
+}
+
+/* Results Info */
+.pgb-results-info {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    padding: 0 4px;
+}
+
+.pgb-results-count {
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+/* Cards List */
+.pgb-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* No Results */
+.pgb-no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: #64748b;
+}
+
+.pgb-no-results-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+/* Card */
+.pgb-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(99, 102, 241, 0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 200px;
+}
+
+.pgb-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+}
+
+/* Card Image */
+.pgb-card-image {
+    position: relative;
+    width: 280px;
+    min-width: 280px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.pgb-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.pgb-card:hover .pgb-card-image img {
+    transform: scale(1.05);
+}
+
+/* Badges */
+.pgb-badge {
+    position: absolute;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    backdrop-filter: blur(8px);
+}
+
+.pgb-badge.verified {
+    top: 12px;
+    left: 12px;
+    background: rgba(99, 102, 241, 0.9);
+    color: #fff;
+}
+
+.pgb-badge.popular {
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #f59e0b;
+}
+
+/* Card Content */
+.pgb-card-content {
+    flex: 1;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pgb-card-top {
+    margin-bottom: auto;
+}
+
+.pgb-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+}
+
+.pgb-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.pgb-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #fef3c7;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #b45309;
+}
+
+.pgb-rating-star {
+    color: #f59e0b;
+}
+
+.pgb-card-location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+}
+
+.pgb-location-icon {
+    width: 16px;
+    height: 16px;
+    color: #6366f1;
+}
+
+/* Tags */
+.pgb-card-middle {
+    margin: 12px 0;
+}
+
+.pgb-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pgb-tag {
+    padding: 6px 12px;
+    background: #f1f5f9;
+    color: #475569;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.pgb-tag.room-type {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: #fff;
+}
+
+.pgb-card:hover .pgb-tag:not(.room-type) {
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+/* Bottom Section */
+.pgb-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pgb-price-section {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.pgb-price-label {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-right: 4px;
+}
+
+.pgb-price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pgb-price-period {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Actions */
+.pgb-card-actions {
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+.pgb-card:hover .pgb-card-actions {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.pgb-btn-secondary {
+    padding: 10px 16px;
+    background: #f1f5f9;
+    color: #475569;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pgb-btn-secondary:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.pgb-btn-primary {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.3);
+}
+
+.pgb-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+
+@media (max-width: 900px) {
+    .pgb-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .pgb-card-image {
+        width: 100%;
+        min-width: 100%;
+        height: 200px;
+    }
+
+    .pgb-card-content {
+        padding: 20px;
+    }
+
+    .pgb-card-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .pgb-card-actions {
+        opacity: 1;
+        transform: translateX(0);
+        width: 100%;
+    }
+
+    .pgb-btn-secondary,
+    .pgb-btn-primary {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .pgb-container {
+        padding: 90px 16px 40px;
+    }
+
+    .pgb-title {
+        font-size: 1.75rem;
+    }
+
+    .pgb-filters {
+        padding: 16px;
+    }
+
+    .pgb-filter-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pgb-select {
+        width: 100%;
+    }
+
+    .pgb-card-title {
+        font-size: 1.1rem;
+    }
+
+    .pgb-price {
+        font-size: 1.25rem;
+    }
+
+    .pgb-card-actions {
+        flex-direction: column;
+    }
+}

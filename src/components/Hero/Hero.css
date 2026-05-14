@@ -1,0 +1,175 @@
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 120px 2rem 4rem;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+}
+
+/* Search Card */
+.search-card {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Search Form - Horizontal */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group select,
+.form-group input {
+  padding: 0.9rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #fff;
+  color: #333;
+  min-width: 140px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  outline: none;
+  border-color: #f97316;
+}
+
+.location-group input {
+  min-width: 180px;
+}
+
+/* Price Group */
+.price-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.rent-label {
+  color: #f97316;
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.price-inputs {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.price-inputs input {
+  width: 70px;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.price-inputs input:focus {
+  outline: none;
+  border-color: #f97316;
+}
+
+/* Search Button */
+.search-btn {
+  padding: 0.9rem 1.8rem;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background: #ea580c;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 1rem 2rem;
+  }
+
+  .hero-content h1,
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .search-card {
+    padding: 1.5rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .form-group select,
+  .form-group input,
+  .location-group input {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .price-group {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+}

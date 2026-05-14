@@ -1,0 +1,137 @@
+
+.category-section {
+  padding: 80px 10%;
+  background-color: #f8faff;
+  text-align: center;
+}
+
+.category-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 50px;
+}
+
+.category-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background-color: #ffffff;
+  border: 2px solid #3b82f6;
+  border-radius: 16px;
+  width: 280px;
+  padding: 35px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-card h3 {
+  color: #2563eb;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  color: #4b5563;
+  font-size: 15px;
+}
+
+.category-card:hover {
+  background-color: #2563eb;
+  transform: translateY(-8px);
+}
+
+.category-card:hover h3,
+
+.category-card.image-card {
+  background: #fff;
+  border: none;
+  border-radius: 18px;
+  width: 320px;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.08);
+  padding: 0;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-card.image-card:hover {
+  box-shadow: 0 8px 32px rgba(30,64,175,0.18);
+  transform: translateY(-8px);
+}
+
+.category-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 18px 18px 0 0;
+}
+
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.category-card.image-card:hover .category-img {
+  transform: scale(1.04);
+}
+
+.category-img-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(0deg, rgba(30,64,175,0.18) 60%, rgba(0,0,0,0) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.category-img-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 18px 18px;
+}
+
+.category-img-title {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.category-img-arrow {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.category-card.image-card:hover .category-img-arrow {
+  transform: translateX(8px) scale(1.2);
+}
+
+.category-desc {
+  color: #4b5563;
+  font-size: 15px;
+  padding: 18px 18px 22px 18px;
+  margin: 0;
+  background: #fff;
+  border-radius: 0 0 18px 18px;
+  min-height: 60px;
+}
