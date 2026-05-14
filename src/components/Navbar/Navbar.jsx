@@ -32,7 +32,7 @@ function Navbar() {
         {/* Auth Buttons */}
         <div className={menuOpen ? 'nav-buttons active' : 'nav-buttons'}>
           <button className="btn btn-outline">Login</button>
-          <button className="btn btn-primary">Sign Up</button>
+          <button className="btn btn-primary">Sign</button>
         </div>
       </div>
     </nav>
